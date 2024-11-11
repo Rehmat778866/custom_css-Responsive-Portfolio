@@ -1,0 +1,305 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body{
+        color: #fff;
+        background-color: #000;
+    }
+    #aboutH2 {
+        font-size: 2.5em; 
+    }
+    #aboutPara{
+        color:#9CA3AF;
+        padding-top:16px ;
+     
+    }
+    #about{
+        padding-top: 128px;
+    }
+    #cardDiv{
+        border: 1px solid var(--#08d184); 
+        width: 350px;
+        padding: 1.25rem 0.5rem;
+    }
+    #cardDiv2{
+        height: 350px;
+    }
+    #cardImage{
+        width: 300px;
+        height: 350px;
+        overflow: hidden;
+        object-fit: cover;
+    }
+    #cardDiv3{
+        padding: 16px;
+        margin-top: 16px;
+    }
+    #cardDiv4{
+        font-size: 2.25rem;
+        font-weight:200;
+    }
+    #contact {
+        padding-top: 8rem; /* pt-32 */
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    /* Grid Layout */
+    #contactDiv1 {
+        display: grid;
+        gap: 2.5rem; /* gap-10 */
+    }
+    #contactH2 {
+        font-size: 3rem; /* text-5xl */
+    }
+    
+    #contactPara {
+        color: #9ca3af; /* text-gray-400 */
+        font-size: 1.125rem; /* text-[18px] */
+        padding-top: 0.5rem; /* pt-2 */
+    }
+    
+    /* Flex for Icons and Text */
+    #contactDiv3, #contactDiv4 {
+        display: flex;
+        gap: 0.75rem; /* gap-3 */
+        align-items: center;
+    }
+    
+    /* Form Elements */
+    #contactDiv5 {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem; /* space-y-8 */
+    }
+    
+    .contactDiv6, #contactDiv5 .flex {
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem; /* gap-1 */
+    }
+    
+    input[type="text"], textarea {
+        height: 40px;
+        background: transparent;
+        border: 1px solid #f97316; /* border-orange-500 */
+        padding: 0.5rem;
+        resize: none;
+    }
+    #footer{
+        margin-top: 4rem; /* mt-16 */
+    padding-top: 1.5rem; /* py-6 */
+    padding-bottom: 1.5rem; /* py-6 */
+    text-align: center; /* text-center */
+    background-color: #f97316; /* bg-orange-500 */
+    }
+    #headingDiv {
+    text-align: center; /* Equivalent to text-center */
+    font-size: 2.25rem; /* Equivalent to text-4xl */
+    padding-bottom: 0; /* Equivalent to pb-0 */
+}
+
+#headingPara {
+    border-bottom: 4px solid; /* Equivalent to border-b-4 */
+    display: inline-block;
+    padding-bottom: 0.5rem; /* Equivalent to pb-2 */
+}
+    
+    textarea {
+        height: auto;
+    }
+    
+    #contactButton {
+        background-color: #f97316; /* bg-orange-500 */
+        padding: 0.5rem 2.5rem; /* p-2 px-10 */
+        color: white;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    #contactButton:hover {
+        background-color: #fb923c; /* Darker orange on hover */
+    }
+    #hero {
+        min-height: 100vh; /* Equivalent to min-h-screen */
+    
+    }
+    
+    /* Navbar Container */
+    #heroDiv1 {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        height: calc(100vh - 60px);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 16px; /* 4 */
+        padding-left: 40px;
+        padding-right: 40px; /* 10 */ /* h-[calc(100vh-60px)] */
+    }
+    #heroDiv2 {
+        margin-top: 8px;
+    }
+    .heroPara{
+        font-size: 2.25rem; /* 4xl */
+    }
+    #heroDiv3 {
+        font-size: 80px; /* text-[80px] */
+        font-weight: bold; /* font-bold */
+        line-height: 1.1; /* leading-tight */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 8px;
+    }
+    #nav{
+        padding-top: 2rem;
+    }
+    #navDiv1 {
+        display: flex;
+        justify-content:center; /* justify-between */
+        align-items: center; /* items-center */
+    }
+    
+    /* Navbar Logo */
+    #navDiv2 {
+        display:none;
+        font-size: 1.25rem; /* text-xl */
+        font-weight: 500; /* font-medium */
+    }
+    
+    /* Navbar Links */
+    #navUl {
+        gap: 2.5rem; /* gap-10 */
+        display: flex; /* Show on medium and larger screens */
+    }
+    #navUl .menulink a {
+        text-decoration: none;
+        color: inherit; /* Inherits color for links */
+    }
+    #navUl li {
+        list-style-type: none;
+    }
+    #outline {
+        display: none; /* Hide on medium and larger screens */
+    }
+    #skills{
+        padding-top: 8rem;
+    }
+    #skiilDiv1 {
+        display: grid;
+        gap: 5rem; /* gap-20 */
+        align-items: center;
+    }
+    #skillH2 {
+        font-size: 2.25rem; /* text-4xl */
+    }
+    #skillPara {
+        color: #6b7280; /* text-gray-500 */
+        padding-top: 0.5rem; /* pt-2 */
+    }
+    
+    /* Skill List Styling */
+    #skillDiv2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* grid-cols-2 */
+        color: #f97316; /* text-orange-500 */
+        font-size: 1.875rem; /* text-3xl */
+    }
+    #skillDiv3, #skillDiv4 {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem; /* space-y-2 */
+    }
+   
+    @media (min-width: 1024px) {
+      
+        #navUl {
+            gap: 4rem; /* lg:gap-16 */
+        
+        }
+ 
+    }
+    @media (min-width: 768px) {
+        .heroPara{
+            font-size: 4.5rem; 
+        }
+     #navDiv2{
+display: block;
+     }
+        #skillH2 {
+            font-size: 3rem; /* md:text-5xl */
+        }
+        #heroDiv1{
+            padding-top: 5rem; /* md:pt-20 */
+          }
+        #skiilDiv1 {
+            grid-template-columns: repeat(2, 1fr); /* md-cols-2 */
+        }
+     #navDiv1{
+        justify-content: space-between;
+     }
+       
+        #aboutH2 {
+            font-size: 3rem; 
+        }
+        #cardDiv{
+            width:300px;
+        }
+        #contactDiv1 {
+            grid-template-columns: repeat(2, 1fr); /* md:grid-cols-2 */
+        }
+        #outline {
+            display: block; /* Show on small screens */
+        }
+    }
+}
+@media (min-width: 640px) {
+    #heroDiv3 {
+        font-size: 100px; /* sim:text-[100px] */
+        
+    }
+    #skillDiv2 {
+        font-size: 2.25rem; /* sm:text-4xl */
+    }
+}
+@media (min-width: 1280px) {
+    #heroDiv1 {
+      flex-direction: row; /* xl:flex (switching to row on extra large screens) */
+    }
+
+  }
+@layer components{
+    .menulink{
+        @apply cursor-pointer hover:text-[#c5c5c5];
+    }
+    .tags{
+        background-color: #1eb9db;
+        margin-right: 0.5rem;
+        margin-top: 0.5rem;
+        padding: 3px 10px;
+        display: inline-block;
+        color: #000;
+        font-size: 12px;
+    }
+    .tags:last-child{
+        margin-right: 0;
+    }
+    .tags:nth-child(2){
+        background-color: #a55eea;
+    }
+    .tags:nth-child(3){
+        background-color: #db9f10;
+    }
+    .tags:nth-child(4){
+        background-color: #eb4d4b;
+    }
+}
+
